@@ -1,5 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_template/routes/app_router.gr.dart';
 import '../utils/utils.dart';
 
 @RoutePage()
@@ -13,7 +14,9 @@ class SplashView extends StatefulWidget {
 class _SplashViewState extends State<SplashView> {
   @override
   void initState() {
-    Future.delayed(const Duration(seconds: 2), () {});
+    Future.delayed(const Duration(seconds: 2), () {
+      context.router.push(const HomeView());
+    });
     super.initState();
   }
 

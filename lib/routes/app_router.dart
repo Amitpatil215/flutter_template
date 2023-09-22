@@ -8,5 +8,6 @@ class AppRouter extends $AppRouter {
   List<AutoRoute> get routes => [
         /// routes go here
         AutoRoute(page: SplashView.page, initial: true),
+        AutoRoute(page: HomeView.page),
       ];
 }
