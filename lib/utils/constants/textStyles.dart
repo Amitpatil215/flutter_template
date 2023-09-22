@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class TextStyleInventory {
+  TextStyleInventory._();
+
   static const TextStyle reg = TextStyle(
     fontSize: 16,
   );
@@ -9,5 +11,4 @@ class TextStyleInventory {
     fontWeight: FontWeight.bold,
     fontSize: 16,
   );
-
 }
