@@ -1,5 +1,5 @@
 import 'package:easy_logger/easy_logger.dart';
-import 'package:flutter/foundation.dart';
+import 'package:flutter_template/app_config.dart';
 import 'package:logger/logger.dart';
 
 class LogHelper {
@@ -40,7 +40,7 @@ class _FlutterTemplateLogFilter extends LogFilter {
   @override
   bool shouldLog(LogEvent event) {
     try {
-      return kDebugMode;
+      return kIsLoggerEnabled;
     } catch (_) {
       return true;
     }
