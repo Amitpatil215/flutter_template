@@ -26,7 +26,7 @@ class RequestClient {
         "/githubforekam/doctor-appointment/doctors",
       );
       return response;
-    } on DioError catch (err) {
+    } on DioException catch (err) {
       final errorMessage = DioExceptionHandler.fromDioError(err).toString();
       throw errorMessage;
     } catch (e) {
@@ -40,7 +40,7 @@ class RequestClient {
         "/githubforekam/doctor-appointment/appointment_options",
       );
       return response;
-    } on DioError catch (err) {
+    } on DioException catch (err) {
       final errorMessage = DioExceptionHandler.fromDioError(err).toString();
       throw errorMessage;
     } catch (e) {
@@ -54,7 +54,7 @@ class RequestClient {
         "/githubforekam/doctor-appointment/appointments",
       );
       return response;
-    } on DioError catch (err) {
+    } on DioException catch (err) {
       final errorMessage = DioExceptionHandler.fromDioError(err).toString();
       throw errorMessage;
     } catch (e) {
@@ -68,7 +68,7 @@ class RequestClient {
         "githubforekam/doctor-appointment/booking_confirmation",
       );
       return response;
-    } on DioError catch (err) {
+    } on DioException catch (err) {
       final errorMessage = DioExceptionHandler.fromDioError(err).toString();
       throw errorMessage;
     } catch (e) {
