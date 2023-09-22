@@ -1,3 +1,3 @@
 export 'colors.dart';
 export 'font.dart';
-export 'textStyles.dart';
+export 'text_styles.dart';

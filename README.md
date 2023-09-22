@@ -33,9 +33,7 @@ class AppRouter extends $AppRouter {
 5 use `context.router.pushNamed(SplashView.name);` for navigation
 
 ### Responsive APP
-2 
-
-type Device so that the auto import suggestion would show up:
+1. type Device so that the auto import suggestion would show up:
 ```
 import 'package:responsive_sizer/responsive_sizer.dart';
 ```
